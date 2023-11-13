@@ -1,5 +1,6 @@
 import pygame as pg
-import dice, player
+import dice, player, game
+import random
 
 
 def main():
@@ -42,7 +43,8 @@ def main():
     
 
     done = False
-
+    
+    game.Game(random.randint(1, 2))
 
     while not done:
         for event in pg.event.get():
