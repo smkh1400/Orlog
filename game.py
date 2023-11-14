@@ -8,19 +8,17 @@ class Game:
             self.phase = (2, 1)
     def update(self):  # to change between phases
         (x, y) = self.phase
-        if y <= 3:
+        if y <= 3: # if is throwing phase
             if self.turn == x:
                 self.phase = (3 - x, y)
             else:
                 self.phase = (3 - x, y + 1)
-        else:
+        else: # if last throwing or next round
             if self.turn == x:
                 self.phase = (3 - x, y)
             else:
                 # next round
                 turn = 3 - x
                 self.phase = (3 - x, 1)
-    def getPhase(self):
-        return self.phase
 
 
