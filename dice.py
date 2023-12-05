@@ -8,6 +8,3 @@ class dice:
     def setRandomFace(self):
         index = random.randint(0, 5)
         self.shownFace = self.faces[index]
-    
-    def getShownFace(self):
-        return self.shownFace

@@ -9,12 +9,6 @@ class Button:
         self.color = color
         self.enable = True
 
-    def setDisable(self):
-        self.enable = False
-    
-    def setEnable(self):
-        self.enable = True
-
     def draw(self, pg, screen):
         font = pg.font.SysFont('Corbel', 20)
         t = font.render(self.text, True, self.textColor)
